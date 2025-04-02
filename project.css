@@ -1,0 +1,123 @@
+* {box-sizing:border-box}
+
+.wrapper {width:100%;}
+
+body {background-color:#4F4F4F;
+color:#FFFFFF;
+font-family: Tahoma, Arial;}
+
+h2 {text-align:center;}
+
+.mainText {border-width: 15px;
+border-color:#FFFFFF;
+border-style:solid;
+background-color:#000000;
+width:95vw;
+height:70vh;
+min-width:500px;
+min-height:400px;
+padding-left:2.5vw;
+padding-right:2.5vw;
+overflow:auto;
+line-height:200%;}
+
+.pageLink {border-width: 15px;
+border-color:#FFFFFF;
+border-style:solid;
+background-color:#000000;
+width:23.4vw;
+height:45vh;
+min-width:100px;
+min-height:75px;
+line-height:200%;
+float:left;
+overflow:auto;}
+
+.inputField {border-width:2px;
+border-color:#FFFFFF;
+border-style:solid;
+width:300px;
+height:2em;
+margin-top:5px;
+margin-right:10px;
+padding-bottom:5px;
+overflow:hidden;}
+
+.outputField {border-width:5px;
+border-color:#FFFFFF;
+border-style:solid;
+width:450px;
+height:5em;
+margin-top:5px;
+margin-right:10px;
+overflow:auto;}
+
+.statField {border-width:5px;
+border-color:#FFFFFF;
+border-style:solid;
+width:510px;
+height:500px;
+margin-top: 10px;
+margin-bottom:10px;
+margin-right:10px;
+overflow:auto;}
+
+.listField {border-width:5px;
+border-color:#FFFFFF;
+border-style:solid;
+width:300px;
+height:500px;
+margin-top: 10px;
+margin-bottom:10px;
+margin-right:10px;
+font-size:2em;
+overflow:auto;
+line-height:130%;}
+
+.button {border-width:5px;
+border-color:#FFFFFF;
+border-style:solid;
+width:250px;
+height:2.5em;
+margin-right:10px;
+text-align:center;
+font-weight:bold;}
+
+a {color:#EEEEEE;
+text-decoration:none;}
+
+.itemDisplay {border-width:5px;
+border-color:#FFFFFF;
+border-style:solid;
+width:250px;
+height:500px;
+margin-right:10px;}
+
+.itemDisplayList {border-width:5px;
+border-color:#FFFFFF;
+border-style:solid;
+width:250px;
+height:500px;
+margin-top:10px;
+margin-bottom:10px;
+margin-right:10px;
+float:left;}
+
+th {font-weight:bold;
+border-width: 1px;
+border-top-style:solid;
+border-bottom-style:solid;
+border-color:#FFFFFF;}
+td {border-width: 1px;
+border-top-style:solid;
+border-bottom-style:solid;
+border-color:#FFFFFF;}
+table {width:100%;}
+
+form {width:50%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:1em;}
+
+.floatLeft {float:left;}
+.floatRight {float:right;}
