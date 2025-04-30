@@ -7,7 +7,20 @@
 <link rel="stylesheet" href="project.css">
 <script>
 	function loadValues() {
-		document.write(5);
+		var overallValues = getItemValues();
+		var lowDamage = document.getElementsByClassName("lowDamage");
+		var midDamage = document.getElementsByClassName("midDamage");
+		var highDamage = document.getElementsByClassName("highDamage");
+		
+		for (let i = 0; i < lowDamage.length; i++) {
+			lowDamage[i] = overallValues / 3;
+		}
+		for (let i = 0; i < midDamage.length; i++) {
+			midDamage[i] = overallValues / 1.5;
+		}
+		for (let i = 0; i < highDamage.length; i++) {
+			highDamage[i] = overallValues * 1.5;
+		}
 	}
 	function getItemValues() {
 		return (document.getElementById("helmet") + document.getElementById("chestplate") + document.getElementById("leggings") +
@@ -61,8 +74,8 @@
 					<summary>
 						Overall Damage (damage)
 					</summary>
-					First hit (damage)<br>
-					Second hit (damage)<br>
+					First hit <div class="midDamage">(damage)</div><br>
+					Second hit <div class="midDamage">(damage)<div><br>
 				</details>
 				<details>
 					<summary>
@@ -81,7 +94,7 @@
 					<summary>
 						Overall Damage (damage)
 					</summary>
-					First hit (damage)
+					First hit <div class="lowDamage">(damage)</div>
 				</details>
 				<details>
 					<summary>
@@ -98,10 +111,10 @@
 					<summary>
 						Overall Damage (damage)
 					</summary>
-					First hit (damage)<br>
-					Second hit (damage)<br>
-					Third hit (damage)<br>
-					Fourth hit (damage)<br>
+					First hit <div class="lowDamage">(damage)</div><br>
+					Second hit <div class="midDamage">(damage)</div><br><br>
+					Third hit <div class="midDamage">(damage)</div><br><br>
+					Fourth hit <div class="highDamage">(damage)</div><br><br>
 				</details>
 				<details>
 					<summary>
@@ -119,8 +132,8 @@
 					<summary>
 						Overall Damage (damage)
 					</summary>
-					First hit (damage)<br>
-					Second hit (damage)
+					First hit <div class="midDamage">(damage)</div><br><br>
+					Second hit <div class="lowDamage">(damage)</div><br>
 				</details>
 				<details>
 					<summary>
