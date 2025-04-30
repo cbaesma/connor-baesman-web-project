@@ -5,6 +5,16 @@
 <meta charset="utf-8">
 <meta name="description" content="A place to make Wynncraft item builds, with in-depth mana and damage calculations">
 <link rel="stylesheet" href="project.css">
+<script>
+	function loadValues() {
+		document.write(getItemValues);
+	}
+	function getItemValues() {
+		return (document.getElementById("helmet") + document.getElementById("chestplate") + document.getElementById("leggings") +
+			document.getElementById("boots") + document.getElementById("ringA") + document.getElementById("ringB") + 
+			document.getElementById("bracelet") + document.getElementById("necklace")) * document.getElementById("weapon");
+	}
+</script>
 </head>
 <div class="wrapper">
 <body>
@@ -165,7 +175,7 @@
 					Spell order: 1, 3, 3
 				</details>
 			</div>
-			<div class="inputField">
+			<div class="outputField">
 				<button type="button" onclick="loadValues">Load Build</button>
 			</div>
 		</div>
@@ -244,7 +254,7 @@
 <footer>
 	<div class="pageLink">
 	<h2><a href="index.html">Main</a></h2><br>
-	Main page. Gives some information regarding the development of the 	site.</div>
+	Main page. Gives some information regarding the development of the site.</div>
 
 	<div class="pageLink">
 	<h2><a href="custom.html">Custom Item Generator</a></h2><br>
@@ -256,7 +266,7 @@
 
 	<div class="pageLink">
 	<h2><a href="changelog.html">Changelog</a></h2><br>
-	List of item history from previous updates, including new 	additions and rebalances. Do not expect information from before 	2.1.</div>
+	List of item history from previous updates, including new additions and rebalances. Do not expect information from before 2.1.</div>
 </footer>
 </body>
 </div>
