@@ -27,13 +27,12 @@ line-height:200%;}
 border-color:#FFFFFF;
 border-style:solid;
 background-color:#000000;
-width:23.4vw;
+width:23.75vw;
 height:45vh;
 min-width:100px;
 min-height:75px;
 line-height:200%;
-float:left;
-overflow:auto;}
+float:left;}
 
 .inputField {border-width:2px;
 border-color:#FFFFFF;
@@ -110,10 +109,12 @@ border-width: 1px;
 border-top-style:solid;
 border-bottom-style:solid;
 border-color:#FFFFFF;}
+
 td {border-width: 1px;
 border-top-style:solid;
 border-bottom-style:solid;
 border-color:#FFFFFF;}
+
 table {width:100%;}
 
 form {width:50%;
@@ -123,3 +124,18 @@ gap:1em;}
 
 .floatLeft {float:left;}
 .floatRight {float:right;}
+
+@media (max-width: 1000px) {
+  .floatLeft {float:none;}
+  
+  .floatRight {float:none;}
+  
+  .pageLink {float:none;
+  min-width: 500px;
+  min-height: 0;
+  width: 95vw;
+  height: 2.5em;}
+
+  .mainText {display: flex;
+  justify-content: center;}
+}
