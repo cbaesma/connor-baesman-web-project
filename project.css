@@ -125,14 +125,13 @@ gap:1em;}
 .floatLeft {float:left;}
 .floatRight {float:right;}
 
-@media (max-width: 1000px) {
-  
+@media (max-width: 1300px) {
+
+  .floatLeft (float: none;}
+  .floatRight (float: none;}
   .pageLink {float:none;
   min-width: 500px;
   min-height: 0;
   width: 95vw;
   height: 10em;}
-
-  .mainText {display: flex;
-  justify-content: center;}
 }
