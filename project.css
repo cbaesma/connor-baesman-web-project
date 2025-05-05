@@ -127,8 +127,9 @@ gap:1em;}
 
 @media (max-width: 1300px) {
 
-  .floatLeft (float: none;}
-  .floatRight (float: none;}
+  .floatLeft {float: none;}
+  .floatRight {float: none;}
+
   .pageLink {float:none;
   min-width: 500px;
   min-height: 0;
