@@ -126,9 +126,6 @@ gap:1em;}
 .floatRight {float:right;}
 
 @media (max-width: 1000px) {
-  .floatLeft {float:none;}
-  
-  .floatRight {float:none;}
   
   .pageLink {float:none;
   min-width: 500px;
